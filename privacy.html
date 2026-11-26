@@ -1,40 +1,51 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy · PlakhinLabs</title>
-<meta name="description" content="PlakhinLabs: independent developer of useful tools for calm and productivity, including the Undupe Chrome extension.">
+<meta name="description" content="PlakhinLabs: independent developer of useful apps and tools. No ads, no tracking.">
 <meta property="og:title" content="PlakhinLabs"><meta property="og:image" content="assets/og.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" type="image/png" href="assets/favicon-64.png">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem("theme")}catch(e){}if(!t)t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";d.dataset.theme=t})();</script>
 <link rel="stylesheet" href="style.css"></head>
 <body>
-<header class="top"><a class="brand" href="index.html"><img src="assets/favicon-64.png" width="32" height="32" alt=""><span>PLAKHIN<b>LABS</b></span></a>
-<nav><a href="index.html"><span lang="en">Home</span><span lang="ru">Главная</span></a><a href="support.html"><span lang="en">Support</span><span lang="ru">Поддержать</span></a><a href="refunds.html"><span lang="en">Refunds</span><span lang="ru">Возвраты</span></a><a href="privacy.html" class=on><span lang="en">Privacy</span><span lang="ru">Конфиденциальность</span></a></nav><button id="lg" type="button" aria-label="Language">EN / RU</button></header>
+<header class="top"><div class="in"><a class="brand" href="index.html"><svg class="mk" width="30" height="30" viewBox="0 0 256 256" role="img" aria-label="PlakhinLabs"><path class="lp" d="M22 30H160A46 46 0 0 1 160 122H100" fill="none" stroke-width="30"/><path class="ll" d="M37 85V215H190" fill="none" stroke-width="30"/></svg><span>Plakhin<b>Labs</b></span></a>
+<nav><a href="index.html"><span lang="en">Home</span><span lang="ru">Главная</span></a><a href="support.html"><span lang="en">Support</span><span lang="ru">Поддержать</span></a><a href="refunds.html"><span lang="en">Refunds</span><span lang="ru">Возвраты</span></a><a href="privacy.html" class=on><span lang="en">Privacy</span><span lang="ru">Конфиденциальность</span></a></nav>
+<div class="ctl"><div class="seg" role="group" aria-label="Theme"><button type="button" class="th" data-th="dark" aria-label="Dark theme" title="Dark">☾</button><button type="button" class="th" data-th="light" aria-label="Light theme" title="Light">☀</button></div>
+<button id="lg" type="button" aria-label="Language">EN / RU</button></div></div></header>
 <main>
-<div lang="en"><h1>Privacy policy</h1>
-<p>Last updated: November 4, 2026. Applies to the Undupe Chrome extension and this website.</p>
-<h2>Undupe extension</h2>
-<ul><li>To find duplicates, Undupe reads the addresses (URLs) of your open tabs. This happens locally in your browser (permission <code>tabs</code>).</li>
-<li>Tab addresses are never collected, transmitted, sold or shared. The extension has no servers, analytics or ads.</li>
-<li>Only your settings are stored in the browser's extension storage: the on/off switch and your list of exception sites.</li></ul>
-<h2>This website</h2>
-<p>The site is hosted on GitHub Pages and uses no analytics or advertising cookies. The only item saved in your browser is your language choice. GitHub may log standard technical data under its own <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p>
-<h2>Donations</h2>
-<p>Voluntary donations are processed by Ko-fi and its payment providers under their own policies. I do not receive or store your card details.</p>
-<h2>Contact</h2>
-<p><a href="mailto:plakhinlabs@gmail.com">plakhinlabs@gmail.com</a></p></div>
-<div lang="ru"><h1>Политика конфиденциальности</h1>
-<p>Обновлено: 4 ноября 2026 г. Относится к расширению Undupe для Chrome и этому сайту.</p>
-<h2>Расширение Undupe</h2>
-<ul><li>Чтобы находить дубликаты, Undupe читает адреса (URL) открытых вкладок. Это происходит локально в вашем браузере (разрешение <code>tabs</code>).</li>
-<li>Адреса вкладок не собираются, не передаются, не продаются и не передаются третьим лицам. У расширения нет серверов, аналитики и рекламы.</li>
-<li>В хранилище расширения сохраняются только настройки: переключатель вкл/выкл и список сайтов-исключений.</li></ul>
-<h2>Этот сайт</h2>
-<p>Сайт размещён на GitHub Pages, без аналитики и рекламных cookie. В браузере сохраняется только выбранный язык. GitHub может вести стандартные технические логи согласно своей <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">политике конфиденциальности</a>.</p>
-<h2>Донаты</h2>
-<p>Добровольные донаты обрабатывают Ko-fi и его платёжные провайдеры по своим правилам. Данные вашей карты я не получаю и не храню.</p>
-<h2>Контакты</h2>
-<p><a href="mailto:plakhinlabs@gmail.com">plakhinlabs@gmail.com</a></p></div>
+<h1><span lang="en">Privacy policy</span><span lang="ru">Политика конфиденциальности</span></h1>
+<p><span lang="en">Last updated: November 26, 2026. Applies to the Undupe and Amnezia Chrome extensions, the Amnezia-Client companion app and this website.</span><span lang="ru">Обновлено: 26 ноября 2026 г. Относится к расширениям Undupe и Amnezia для Chrome, компаньон-клиенту Amnezia-Client и этому сайту.</span></p>
+<h2><span lang="en">No ads, no tracking</span><span lang="ru">Без рекламы и слежки</span></h2>
+<p><span lang="en">None of my products show ads. My browser extensions and the companion client collect nothing: no analytics, no tracking, no data sent to me.</span><span lang="ru">Ни один из моих продуктов не показывает рекламу. Мои расширения для браузера и компаньон-клиент ничего не собирают: нет аналитики, слежки и передачи данных мне.</span></p>
+<h2 id="undupe">Undupe</h2>
+<ul><li><span lang="en">To find duplicates, Undupe reads the addresses (URLs) of your open tabs. This happens locally in your browser (permission <code>tabs</code>).</span><span lang="ru">Чтобы находить дубликаты, Undupe читает адреса (URL) открытых вкладок. Это происходит локально в вашем браузере (разрешение <code>tabs</code>).</span></li>
+<li><span lang="en">Tab addresses are never collected, transmitted, sold or shared. The extension has no servers, analytics or ads.</span><span lang="ru">Адреса вкладок не собираются, не передаются, не продаются и не передаются третьим лицам. У расширения нет серверов, аналитики и рекламы.</span></li>
+<li><span lang="en">Only your settings are stored in the browser's extension storage: the on/off switch and your list of exception sites.</span><span lang="ru">В хранилище расширения сохраняются только настройки: переключатель вкл/выкл и список сайтов-исключений.</span></li></ul>
+<h2 id="amnezia">Amnezia</h2>
+<p><span lang="en">Neither the extension nor the Amnezia-Client companion collects, stores or transmits to me or to third parties any data about you or your browsing.</span><span lang="ru">Ни расширение, ни компаньон-клиент Amnezia-Client не собирают, не хранят и не передают мне или третьим лицам никаких данных о вас или о вашем просмотре сайтов.</span></p>
+<p><span lang="en">The extension works only with your own VPN key. Your traffic goes to the server specified in that key, not through any servers of mine.</span><span lang="ru">Расширение работает только с вашим собственным VPN-ключом. Ваш трафик идёт на сервер, указанный в этом ключе, а не через какие-либо мои серверы.</span></p>
+<h3 class="grp"><span lang="en">Extension permissions in Chrome</span><span lang="ru">Разрешения расширения в Chrome</span></h3>
+<ul><li><code>proxy</code> — <span lang="en">routes the sites you choose through the client's local proxy.</span><span lang="ru">направляет выбранные вами сайты через локальный прокси клиента.</span></li>
+<li><code>storage</code> — <span lang="en">stores your settings and site list only in your browser.</span><span lang="ru">хранит ваши настройки и список сайтов только в вашем браузере.</span></li>
+<li><code>tabs</code> — <span lang="en">reads the address of the current tab to add the site to the list and show whether it goes through the VPN.</span><span lang="ru">читает адрес текущей вкладки, чтобы добавить сайт в список и показать, идёт ли он через VPN.</span></li>
+<li><code>alarms</code> — <span lang="en">checks every half a minute whether the client is running.</span><span lang="ru">раз в полминуты проверяет, работает ли клиент.</span></li>
+<li><span lang="en">Access to all sites</span><span lang="ru">Доступ ко всем сайтам</span> (<code>&lt;all_urls&gt;</code>) — <span lang="en">needed only for the proxy to work. The extension does not read or modify page content.</span><span lang="ru">нужен только для работы прокси. Содержимое страниц расширение не читает и не изменяет.</span></li></ul>
+<h3 class="grp"><span lang="en">Companion client</span><span lang="ru">Компаньон-клиент</span></h3>
+<ul><li><span lang="en">Is not installed into the system and installs no drivers: it is a regular program that you simply delete to remove.</span><span lang="ru">Не устанавливается в систему и не ставит драйверов: это обычная программа, которую достаточно удалить.</span></li>
+<li><span lang="en">Sends traffic nowhere except to your server from the key.</span><span lang="ru">Не отправляет трафик никуда, кроме вашего сервера из ключа.</span></li>
+<li><span lang="en">Accepts connections only from your own computer (address 127.0.0.1).</span><span lang="ru">Принимает подключения только с вашего компьютера (адрес 127.0.0.1).</span></li>
+<li><span lang="en">Stores only your .conf file and a log next to the program. They are never sent anywhere.</span><span lang="ru">Рядом с программой хранит только ваш файл .conf и журнал работы. Наружу они не отправляются.</span></li></ul>
+<h2><span lang="en">Android apps</span><span lang="ru">Android-приложения</span></h2>
+<p><span lang="en">Each Android app has its own privacy policy, linked from its card on the <a href="index.html">home page</a>.</span><span lang="ru">У каждого Android-приложения своя политика конфиденциальности, ссылка на неё есть в карточке приложения на <a href="index.html">главной странице</a>.</span></p>
+<h2><span lang="en">This website</span><span lang="ru">Этот сайт</span></h2>
+<p><span lang="en">The site is hosted on GitHub Pages and uses no analytics or advertising cookies. The only items saved in your browser are your language and theme choice. GitHub may log standard technical data under its own <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</span><span lang="ru">Сайт размещён на GitHub Pages, без аналитики и рекламных cookie. В браузере сохраняются только выбранные язык и тема. GitHub может вести стандартные технические логи согласно своей <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">политике конфиденциальности</a>.</span></p>
+<h2><span lang="en">Donations and payments</span><span lang="ru">Донаты и платежи</span></h2>
+<p><span lang="en">Purchases in Google Play are processed by Google.</span><span lang="ru">Покупки в Google Play обрабатывает Google.</span></p>
+<p><span lang="en">Card donations are processed by Stripe under its own policies. I do not receive or store your card details.</span><span lang="ru">Донаты картой обрабатывает Stripe по своим правилам. Данные вашей карты я не получаю и не храню.</span></p>
+<p><span lang="en">Crypto donations are public blockchain transfers to my wallet addresses, so the transaction and your sending address are visible on the blockchain.</span><span lang="ru">Крипто-донаты — это публичные переводы на адреса моих кошельков, поэтому транзакция и адрес отправителя видны в блокчейне.</span></p>
 </main>
 <footer><span>© 2026 PlakhinLabs</span><a href="mailto:plakhinlabs@gmail.com">plakhinlabs@gmail.com</a><a href="https://github.com/PlakhinLabs">GitHub</a></footer>
 <script src="lang.js"></script>
+<script src="fx.js" defer></script>
 </body></html>

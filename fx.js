@@ -51,7 +51,7 @@ var CW=4,CH=6,G=1100,W=0,H=0,cols=0,rows=0,dpr=1,mk=null,on=null,lit=null,listP=
 var tStart=0,last=0,running=false,visible=true,raf=0;
 var ink="#fff",blue="#4283EB",SET1="01:;+*/<>=-",SET2="PLAKHINLABS";
 var P=new Path2D("M22 30H160A46 46 0 0 1 160 122H100"),L=new Path2D("M37 85V215H190");
-var ptr={tx:0,ty:0,x:0,y:0,px:0,py:0,vx:0,vy:0,active:false,has:false,R:28},to=0,qx=0,qy=0;
+var ptr={tx:0,ty:0,x:0,y:0,px:0,py:0,vx:0,vy:0,active:false,has:false,R:14},to=0,qx=0,qy=0;
 function colors(){var s=getComputedStyle(root);ink=s.getPropertyValue("--lp").trim()||"#fff";blue=s.getPropertyValue("--bl").trim()||"#4283EB"}
 function rc(s){return s.charAt(Math.random()*s.length|0)}
 function newDrop(init,fast){return{y:init?-Math.random()*rows*1.6:(fast?-Math.random()*4:-Math.random()*rows*.6),v:fast?17+Math.random()*9:9+Math.random()*14,len:6+(Math.random()*12|0)}}
@@ -140,7 +140,7 @@ function start(){if(reduce||running||!visible||document.hidden)return;running=tr
 function stop(){running=false;cancelAnimationFrame(raf)}
 function init(){colors();if(!build())return;hero.classList.add("js-mx");
  if(reduce){draw(performance.now(),0)}else start()}
-function pos(e){var r=cv.getBoundingClientRect();ptr.tx=e.clientX-r.left;ptr.ty=e.clientY-r.top;ptr.R=e.pointerType==="touch"?36:28}
+function pos(e){var r=cv.getBoundingClientRect();ptr.tx=e.clientX-r.left;ptr.ty=e.clientY-r.top;ptr.R=e.pointerType==="touch"?18:14}
 if(!reduce){
  cv.addEventListener("pointerenter",function(e){pos(e);clearTimeout(to);ptr.active=true});
  cv.addEventListener("pointermove",function(e){pos(e);clearTimeout(to);ptr.active=true});
